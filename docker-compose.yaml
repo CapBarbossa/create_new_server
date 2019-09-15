@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  IPv6_assisstant:
+    image:
+      capsparrow/my-ipv6-assisstant:latest
+    restart: always
+    network_mode: 
+      host
+
+  SSRR:
+    image:
+      capsparrow/my_tizi:latest
+    restart: always
+    ports:
+      - "23666:443"
+      - "23666:443/udp"
+
+
+
+
+
