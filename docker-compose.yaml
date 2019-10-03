@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  SSRR:
+    image:
+      capsparrow/my_tizi:ipv6
+    restart: always
+    network_mode:
+      host
+      
